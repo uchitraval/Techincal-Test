@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page 2 - Cloudfront HLS STREAM</title>
+    <script src="//tools.streamroot.io/usage-graphs/stable/graphs.js"></script>
+    <!-- Video.js build -->
+    <link href="//vjs.zencdn.net/7.4.1/video-js.min.css" rel="stylesheet" />
+    <script src="//vjs.zencdn.net/7.4.1/video.min.js"></script>
+
+    <!-- Streamroot Builds -->
+    <script src="https://cdn.streamroot.io/videojs-hls-dna-plugin/1/stable/videojs-hls-dna-plugin.js#streamrootKey=da32565b-dd31-4ae8-9be7-951d6ca79621"></script>
+    <script src="https://cdn.streamroot.io/videojs-hlsjs-plugin/1/stable/videojs-hlsjs-plugin.js"></script>
+
+
+    <!-- Graphs -->
+    <script src="https://tools.streamroot.io/usage-graphs/stable/graphs.js"></script>
+
+    <script>
+      var player;
+
+      function contentIdFn(contentUrl) {
+        return "Cloudfront HLS STREAM";
+      }
+
+      function setuUpload() {
+        if (Streamroot.instances[0].dnaUploadEnabled) {
+          Streamroot.instances[0].dnaUploadEnabled = false;
+          document.querySelector("#btnUpload").innerText = "Start upload";
+        } else {
+          Streamroot.instances[0].dnaUploadEnabled = true;
+          document.querySelector("#btnUpload").innerText = "Stop upload";
+        }
+      }
+    </script>
+  </head>
+  <body>
+       <center>
+      <header>Test Page 2 - Cloudfront HLS STREAM</header>
+      <video
+        width="600px"
+        height="300px"
+        id="demoplayer"
+        class="video-js vjs-big-play-centered"
+        poster="/images/font.PNG"
+        controls
+        autoplay
+        muted
+      >
+        <source
+          src="https://wowza-test-cloudfront.streamroot.io/vodOrigin/tos1500.mp4/playlist.m3u8"
+          type="application/x-mpegURL"
+        />
+      </video>
+    </div>
+    <button id="btnUpload" onclick="setuUpload();">Stop upload</button>
+      <div id="streamroot-graphs"></div>
+    </center>
+
+    <script>
+      var options = {
+        html5: {
+          hlsjsConfig: {
+            maxBufferSize: 0,
+            maxBufferLength: 30,
+            liveSyncDuration: 0,
+            liveMaxLatencyDuration: Infinity,
+          },
+        },
+        dnaConfig: {
+          //"contentIdGenerator" : contentIdFn,
+        },
+      };
+      player = videojs("demoplayer", options);
+    </script>
+  </body>
+</html>
