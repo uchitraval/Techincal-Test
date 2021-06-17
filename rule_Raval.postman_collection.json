@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "30737f27-c685-48f9-8dd6-6fd795aa2111",
+		"name": "rule_Raval",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"dna",
+						"properties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"compass",
+						"properties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"property_test\",\r\n        \"activationRatio\": 0,\r\n        \"superSeederRatio\": 0,\r\n        \"detectRangeRequest\": false,\r\n        \"geoblockingListId\": \"60507bfd-6331-4664-a63d-0d62091968d6\",\r\n        \"networkActivation\": {\r\n            \"wifiEthernetUpload\": true,\r\n            \"wifiEthernetDownload\": true,\r\n            \"cellularOtherUpload\": false,\r\n            \"cellularOtherDownload\": true\r\n        },\r\n        \"ssai\": {\r\n            \"enabled\": false,\r\n            \"provider\": \"\",\r\n            \"options\": null\r\n        },\r\n        \"enterprise\": {\r\n            \"customStunUrls\": [],\r\n            \"customSignalingUrl\": \"\",\r\n            \"localNetworkOnly\": false,\r\n            \"matching\": false,\r\n            \"matchingMap\": false,\r\n            \"matchingMask\": false,\r\n            \"unknownSubnetAllow\": false,\r\n            \"mask\": 0\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"property_with_geo\",\r\n        \"activationRatio\": 1,\r\n        \"superSeederRatio\": 1,\r\n        \"detectRangeRequest\": false,\r\n        \"geoblockingListId\": \"60507bfd-6331-4664-a63d-0d62091968d6\",\r\n        \"networkActivation\": {\r\n            \"wifiEthernetUpload\": true,\r\n            \"wifiEthernetDownload\": true,\r\n            \"cellularOtherUpload\": true,\r\n            \"cellularOtherDownload\": true\r\n        },\r\n        \"ssai\": {\r\n            \"enabled\": false,\r\n            \"provider\": \"\",\r\n            \"options\": \"\"\r\n        },\r\n        \"enterprise\": {\r\n            \"customStunUrls\": [],\r\n            \"customSignalingUrl\": \"\",\r\n            \"localNetworkOnly\": false,\r\n            \"matching\": false,\r\n            \"matchingMap\": false,\r\n            \"matchingMask\": false,\r\n            \"unknownSubnetAllow\": false,\r\n            \"mask\": 0\r\n        }\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"dna",
+						"properties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"property_with_geo\",\r\n        \"activationRatio\": 1,\r\n        \"cdnListName\": \"\",\r\n        \"geoblockingListId\": \"60507bfd-6331-4664-a63d-0d62091968d6\",\r\n        \"cdnScoreProvider\": {\r\n            \"name\": \"\",\r\n            \"credentials\": {\r\n                \"citrixCustomerID\": 0,\r\n                \"citrixAppID\": 0\r\n            }\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"default\",\r\n        \"activationRatio\": 0,\r\n        \"cdnListName\": \"\",\r\n        \"geoblockingListId\": \"60507bfd-6331-4664-a63d-0d62091968d6\",\r\n        \"cdnScoreProvider\": {\r\n            \"name\": \"\",\r\n            \"credentials\": {\r\n                \"citrixCustomerID\": 0,\r\n                \"citrixAppID\": 0\r\n            }"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"compass",
+						"properties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"property_with_geo\",\r\n        \"activationRatio\": 1,\r\n        \"superSeederRatio\": 1,\r\n        \"detectRangeRequest\": false,\r\n        \"geoblockingListId\": \"14714a72-4223-4120-800d-503d4b58ff99\",\r\n        \"networkActivation\": {\r\n            \"wifiEthernetUpload\": true,\r\n            \"wifiEthernetDownload\": true,\r\n            \"cellularOtherUpload\": true,\r\n            \"cellularOtherDownload\": true\r\n        },\r\n        \"ssai\": {\r\n            \"enabled\": false,\r\n            \"provider\": \"\",\r\n            \"options\": \"\"\r\n        },"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"compass",
+						"properties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"DNA_Config_1.1\",\r\n    \"type\":\"blacklist\",\r\n    \"countries\":[\"France\", \"Italy\"],\r\n    \"isps\":[\"Orange France Mobile\", \"Wind Tre\"]\r\n}"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"geo-isp-restrictions",
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists/60507bfd-6331-4664-a63d-0d62091968d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "API-Key uxVV-c7PEeu_zG6Fly1Ngg.GPTuNFBJ0kwVuG9fZmCDjfDn1NtkvzlrdTQY5xrDTc4pAtpmTrb5pXfVIzNfGzGP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists/\"14714714a72-4223-4120-800d-503d4b58ff99\"",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"geo-isp-restrictions",
+						"lists",
+						"\"14714714a72-4223-4120-800d-503d4b58ff99\""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
